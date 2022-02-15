@@ -1,0 +1,87 @@
+/*
+.maingrid{
+    border: 1px solid black;
+    display:grid;
+    grid-gap:15px;
+    padding: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "b1 b2 b3"
+                         "b4 b5 b6";
+    background-color: azure;
+}
+
+.maingrid li:nth-child(1){
+    grid-area: b1;
+    background-color: black;
+}
+.maingrid li:nth-child(2){
+    grid-area: b2;
+    background-color: gray;
+}
+.maingrid li:nth-child(3){
+    grid-column: b3;
+    background-color: red;
+}
+.maingrid li:nth-child(4){
+    grid-column: b4;
+    background-color: blue;
+}
+.maingrid li:nth-child(5){
+    grid-column: b5 / -1;
+    background-color: blueviolet;
+} */
+
+
+/* ==== Flexbox ===*/
+
+
+.processor, .ram, .hdd, .ssd, .gpu, .monitor{
+    text-align: center;
+    color:#CED4DA;
+}
+
+.processor h4, .ram h4, .hdd h4, .ssd h4, .gpu h4, .monitor h4{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 25px;
+}
+
+.mainflex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap:40px;
+    list-style: none;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.mainflex li{
+    padding: 10px 2px 1px 2px;    
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 15px;
+    height: 100%;
+    color: #CED4DA;
+}
+.mainflex li:is(:hover,:focus){
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 10px;
+}
+
+
+
+/*
+.mainflex li:nth-child(2){
+}
+.mainflex li:nth-child(3){
+}
+.mainflex li:nth-child(4){
+}
+.mainflex li:nth-child(5){
+}*/
+
+img{
+    width: 50px;
+    height: 50px;
+}
